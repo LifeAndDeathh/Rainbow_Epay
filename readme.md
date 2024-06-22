@@ -4,9 +4,9 @@
 特色功能：支付插件扩展、用户组管理、商户审核、实名认证、快捷登录、通道轮询、商户直清、服务商模式、实时结算、聚合收款码、风控机制。
 
 ## Install
-### 1.配置aaPanel （CentOS 7+）
+### 1.配置aaPanel
 ```
-yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh 安装完成后我们登陆 aaPanel 进行环境的安装。
+URL=https://www.aapanel.com/script/install_7.0_en.sh && if [ -f /usr/bin/curl ];then curl -ksSO "$URL" ;else wget --no-check-certificate -O install_7.0_en.sh "$URL";fi;bash install_7.0_en.sh aapanel
 ```
 选择使用LNMP的环境安装方式勾选如下信息
 
