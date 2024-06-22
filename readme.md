@@ -1,6 +1,13 @@
 ## Install
 
-1、首先获取源码包并上传；
+1.添加站点#
+aaPanel 面板 > Website > Add site。
+
+在 Domain 填入你指向服务器的域名
+在 Database 选择MySQL
+在 PHP Verison 选择PHP-74
+
+首先获取源码包并上传；
 
 2、配置网站信息：设置站点伪静态；
 ```
