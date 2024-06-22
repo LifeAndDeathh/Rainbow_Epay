@@ -4,10 +4,19 @@
 特色功能：支付插件扩展、用户组管理、商户审核、实名认证、快捷登录、通道轮询、商户直清、服务商模式、实时结算、聚合收款码、风控机制。
 
 ## Install
+### 1.配置aaPanel （CentOS 7+）
+```
+yum install -y wget && wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh && bash install.sh 安装完成后我们登陆 aaPanel 进行环境的安装。
+```
+选择使用LNMP的环境安装方式勾选如下信息
+
 - Nginx 1.21.4
 - PHP 7.3
 - MySQL 5.6.50
-### 1.添加站点
+
+选择 Fast 快速编译后进行安装。
+
+### 2.添加站点
 aaPanel 面板 > Website > Add site。
 
 > 在 Domain 填入你指向服务器的域名
@@ -16,10 +25,10 @@ aaPanel 面板 > Website > Add site。
 >
 > 在 PHP Verison 选择PHP
 
-### 2.上传源码
+### 3.上传源码
 路径如：/www/wwwroot/你的站点域名。
 
-### 3.配置网站信息：设置站点伪静态
+### 4.配置网站信息：设置站点伪静态
 添加完成后编辑添加的站点 > URL rewrite 填入伪静态信息。
 ```
 location / {
@@ -35,6 +44,6 @@ location ^~ /includes {
   deny all;
 }
 ```
-### 4.直接访问站点傻瓜安装
+### 5.直接访问站点傻瓜安装
 
 ### 5.后台默认账号密码：admin，123456
