@@ -3,7 +3,7 @@
 彩虹易支付系统，专注于聚合支付网站解决方案提供，以信誉求市场，以稳定求发展，行业内最安全，简单易用，专业的技术团队，最放心的聚合支付系统。
 特色功能：支付插件扩展、用户组管理、商户审核、实名认证、快捷登录、通道轮询、商户直清、服务商模式、实时结算、聚合收款码、风控机制。
 
-## Install
+## 安装
 ### 1.配置aaPanel
 ```
 URL=https://www.aapanel.com/script/install_7.0_en.sh && if [ -f /usr/bin/curl ];then curl -ksSO "$URL" ;else wget --no-check-certificate -O install_7.0_en.sh "$URL";fi;bash install_7.0_en.sh aapanel
